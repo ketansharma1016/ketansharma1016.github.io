@@ -36,7 +36,6 @@ main{flex:1;min-width:0;background:var(--side);border:1px solid var(--line);bord
 h2{font:800 2.6rem/1.05 var(--display);margin:32px 0 18px;text-transform:uppercase;letter-spacing:.02em}
 h3{font:700 1.6rem/1.2 var(--display);margin:30px 0 10px}
 .panel p{max-width:70ch}
-.paper{margin:16px 0 0;max-width:860px;background:#fff;border:1px solid var(--line)}.paper img{display:block;width:100%;height:auto}
 .chips{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:8px}
 .chip{background:var(--card);border:1px solid var(--line);border-top:3px solid var(--brass);border-radius:4px;padding:16px 18px}
 .chip b{display:block;font:700 1.4rem var(--display);color:var(--brass);margin-bottom:4px}
@@ -94,7 +93,6 @@ dialog button{background:var(--card);border:1px solid var(--line);border-radius:
   <div class="avatar"><span aria-hidden="true">KS</span><img src="images/me.jpg" alt="Ketan Sharma" onerror="this.remove()"></div>
   <h1>Ketan Sharma</h1>
   <span class="role">Mechanical engineering student</span><br>
-  <a class="btn" href="files/Ketan_Sharma_Resume.pdf">Download resume</a>
   <button id="toggle" aria-expanded="false" aria-controls="contacts">Show contacts</button>
   <ul class="contacts" id="contacts">
     <li><small>Email</small><a href="mailto:ketansharma023@gmail.com">ketansharma023@gmail.com</a></li>
@@ -133,8 +131,38 @@ dialog button{background:var(--card);border:1px solid var(--line);border-radius:
   <section class="panel" id="resume" hidden>
     <h2>Resume</h2>
     <a class="btn alt" href="files/Ketan_Sharma_Resume.pdf" download>Download PDF</a>
-    <a class="btn alt" href="files/Ketan_Sharma_Resume.pdf" target="_blank" rel="noopener">Open full size</a>
-    <figure class="paper"><a href="files/Ketan_Sharma_Resume.pdf" target="_blank" rel="noopener"><img src="images/resume.png" alt="Ketan Sharma's resume: objective, education at San Jose State University (B.S. Mechanical Engineering, May 2028), skills, projects and work experience at Target"></a></figure>
+    <h3>Objective</h3>
+    <p>College student seeking an internship in the field of mechanical design in Silicon Valley.</p>
+    <h3>Education</h3>
+    <div class="entry"><h4>Bachelor of Science (B.S.) in Mechanical Engineering</h4><div class="meta">San Jose State University, San Jose, CA &middot; May 2028 &middot; GPA: 3.42</div>
+      <div>Relevant Coursework: Mechatronics, Machine Operations &amp; Safety, Machining Processes</div></div>
+    <h3>Skills</h3>
+    <div class="chips">
+      <div class="chip"><b>Design</b>SolidWorks, GD&amp;T, DFM</div>
+      <div class="chip"><b>Fabrication</b>3D Printing, Machining, Woodworking, Sheet Metal</div>
+      <div class="chip"><b>Electronics &amp; Programming</b>Raspberry Pi Pico, Arduino, Python, C++</div>
+    </div>
+    <h3>Projects</h3>
+    <div class="entry"><h4>Automated Medication Dispenser</h4>
+      <ul><li>Designed and 3D printed a seven-compartment rotating carousel mechanism to house and organize individual medication pills for timed doses.</li>
+      <li>Integrated a microcontroller, wired electrical components, and multi-sensor feedback logic with a user interface to automate weekly medication dispensing, verify pill delivery, and monitor user medication retrieval.</li>
+      <li>Achieved 90% accuracy (18/20) in pill-drop detection through RTC-driven scheduled dispensing control.</li></ul></div>
+    <div class="entry"><h4>Wall Mounted Hanger</h4>
+      <ul><li>Machined a two-part, heavy-duty aluminum wall-mount hanger: a milled plate and a lathed peg.</li>
+      <li>Applied manufacturing processes to meet precision fit requirements, including countersinking, threading, and assembling a #10-24 flat machine screw between the lathe and mill parts.</li>
+      <li>Achieved finished product dimensions within &plusmn;0.005" of target tolerances.</li></ul></div>
+    <div class="entry"><h4>Mini Mailbox</h4>
+      <ul><li>Fabricated a miniature hinged door mailbox through sheet metal and woodworking processes.</li>
+      <li>Assembled mailbox with a functioning hinged door, holding almost all fit tolerances within &plusmn;1/16" of the drawing specifications.</li></ul></div>
+    <div class="entry"><h4>Thermoelectric Generator Senior Project, Branham High</h4><div class="meta"><a href="https://tinyurl.com/thermoelectricgen">tinyurl.com/thermoelectricgen</a></div>
+      <ul><li>Designed and tested thermoelectric wearable wrist prototype, validating the concept of heat-to-electricity conversion.</li>
+      <li>Defined design criteria and implemented test framework to assess prototype performance and materials.</li>
+      <li>Collected and analyzed survey data from students to identify user needs, constraints, parameters, and design specifications.</li></ul></div>
+    <h3>Work Experience</h3>
+    <div class="entry"><h4>Technology Consultant, Target, San Jose West, CA</h4><div class="meta">September 2023 &ndash; August 2025</div>
+      <ul><li>Delivered personalized technical solutions through assessing customer demands and expectations.</li>
+      <li>Resolved and clarified product features, software and hardware issues, enhancing customer understanding and improving overall satisfaction.</li>
+      <li>Monitored inventory and pricing strategies to optimize sales performance through floor products and placements.</li></ul></div>
   </section>
 
   <section class="panel" id="work" hidden>
